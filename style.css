@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #eef3f8;
+    color: #222;
+}
+
+.container {
+    width: 92%;
+    max-width: 1300px;
+    margin: 25px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+/* ========================= */
+/* CONNECTION */
+/* ========================= */
+
+.connection {
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.connection.online {
+    background: #d4edda;
+    color: #155724;
+}
+
+.connection.offline {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+/* STATUS */
+/* ========================= */
+
+.status {
+    width: 280px;
+    max-width: 90%;
+    margin: auto;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.green {
+    background: #28a745;
+}
+
+.blue {
+    background: #007bff;
+}
+
+.red {
+    background: #dc3545;
+}
+
+.confidence {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.update {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* ========================= */
+/* ADVICE */
+/* ========================= */
+
+.adviceBox {
+    background: #f7f9fc;
+    border-left: 6px solid #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.adviceBox h3 {
+    margin-bottom: 12px;
+}
+
+.adviceBox ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.adviceBox li {
+    margin-bottom: 8px;
+}
+
+/* ========================= */
+/* GRAPHS */
+/* ========================= */
+
+.graphContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.graphContainer iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ========================= */
+/* CHAT */
+/* ========================= */
+
+.chatBox {
+    height: 350px;
+    overflow-y: auto;
+    background: #f5f7fa;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.aiBubble,
+.userBubble {
+    padding: 12px 15px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+.aiBubble {
+    background: #e1ecff;
+    margin-right: auto;
+}
+
+.userBubble {
+    background: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.typing {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.chatInput {
+    display: flex;
+    gap: 10px;
+}
+
+.chatInput input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.chatInput button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.chatInput button:hover {
+    background: #0056b3;
+}
+
+/* ========================= */
+/* PHONE */
+/* ========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .status {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .graphContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .graphContainer iframe {
+        height: 300px;
+    }
+
+    .chatInput {
+        flex-direction: column;
+    }
+
+    .chatInput button {
+        width: 100%;
+    }
+}
